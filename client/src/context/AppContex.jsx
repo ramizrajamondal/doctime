@@ -9,7 +9,7 @@ export const AppContext = createContext([]);
 
 export const AppContextProvider = (props) => {
   const [doctors, setDoctors] = useState([]);
-  const backendurl = import.meta.env.VITE_BACKEND_URL
+  const backendurl = 'https://doctime-server-20qa.onrender.com'
   const currIcon = '$'
   const getAllDoctors = async () => {
     try {
