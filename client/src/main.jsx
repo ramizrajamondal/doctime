@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { AppContextProvider } from "./context/AppContex.jsx"
-import { UserContextProvider } from './context/userContex.jsx'
+import { UserContextProvider } from './context/UserContex.jsx'
 import { ToastContainer } from "react-toastify"
 
 createRoot(document.getElementById('root')).render(
