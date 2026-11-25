@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom"
 import axios from "axios"
 import {AppContext} from "../context/AppContex.jsx"
 import { toast } from 'react-toastify';
-import { UserContex } from '../context/userContex.jsx';
+import { UserContex } from '../context/UserContex.jsx';
 import { useEffect } from 'react';
 const SignUp = () => {
   const[email, setEmail] = useState("");
