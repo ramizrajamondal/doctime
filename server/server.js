@@ -18,8 +18,14 @@ connectCloudinary();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+const allowedOrigins = [
+    "https://doctime-frontend-ebqj.onrender.com",
+    "https://doctime-admin-pannel.onrender.com"
+];
+
 app.use(cors({
-    origin: "*",
+    origin: allowedOrigins,
     credentials: true
 }));
 
