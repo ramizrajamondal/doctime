@@ -7,7 +7,7 @@ export const UserContex = createContext();
 export const UserContextProvider =  (props) => {
     const[userToken, setUserToken] = useState(localStorage.getItem('userToken') ? localStorage.getItem('userToken') : '');
     const[userProfile, setUserProfile] = useState({});
-    const backendurl = import.meta.env.VITE_BACKEND_URL;
+    const backendurl = 'https://doctime-server-20qa.onrender.com'
     const getProfile = async () => {
       try {
         const response = await axios.get(`${backendurl}/api/users/get-profile`, {
