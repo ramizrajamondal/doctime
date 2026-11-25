@@ -6,7 +6,7 @@ export const AdminContex = createContext();
 
 export const AdminContexProvider = (props) => {
     const [adminToken, setAdminToken] = useState(localStorage.getItem('adminToken') ? localStorage.getItem('adminToken') : '');
-    const backendurl = import.meta.env.VITE_BACKEND_URL
+    const backendurl = 'https://doctime-server-20qa.onrender.com'
     const value = {adminToken,setAdminToken,backendurl}
     return (
         <AdminContex.Provider value={value}>
