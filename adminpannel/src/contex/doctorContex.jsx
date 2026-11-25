@@ -7,7 +7,7 @@ export const DoctorContex = createContext();
 export const DoctorContexProvider = (props) => {
     const [doctorToken, setDoctorToken] = useState(localStorage.getItem('doctortoken') ? localStorage.getItem('doctortoken') : '');
     const[doctorAppointments, setDoctorAppointments] = useState([]);
-    const backendurl = import.meta.env.VITE_BACKEND_URL;
+    const backendurl = 'https://doctime-server-20qa.onrender.com'
     const getAppointmentByDoctor = async () => {
         try {
             const response = await axios.get(backendurl + '/api/doctor/appointments',{
